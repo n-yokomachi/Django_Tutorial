@@ -2,7 +2,7 @@
 
 <link rel = "stylesheet" type="text/css" href="{% static 'polls/style.css '%}">
 
-<h1>{{ question.question_text }}</h1>
+<h2>{{ question.question_text }}</h2>
 
 <ul>
     {% for choice in question.choice_set.all %}
@@ -10,4 +10,5 @@
     {% endfor %}
 </ul>
 
-<a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+<a href="{% url 'polls:detail' question.id %}">Vote again?</a><br>
+<a href="{% url 'polls:index' %}">Top page</a>

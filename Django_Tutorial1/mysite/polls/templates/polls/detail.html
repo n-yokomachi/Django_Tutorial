@@ -2,7 +2,7 @@
 
 <link rel = "stylesheet" type="text/css" href="{% static 'polls/style.css '%}">
 
-<h1>{{ question.question_text }}</h1>
+<h2>{{ question.question_text }}</h2>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
@@ -14,3 +14,5 @@
 {% endfor %}
 <input type="submit" value="Vote">
 </form>
+
+<a href="{% url 'polls:index' %}">Top page</a>
