@@ -1,3 +1,15 @@
+{% load static %}
+
+<link rel = "stylesheet" type="text/css" href="{% static 'polls/style.css '%}">
+
+<h2>Polls Application by Django</h2>
+<p>このページはPython + Djangoの公式チュートリアルで作成した投票アプリのサンプルです。<br>
+    <a href="https://docs.djangoproject.com/ja/3.0/">公式チュートリアルのドキュメントはこちら</a><br>   
+    <a href="https://github.com/duplicate1984/Django_Tutorial">Githubリポジトリはこちら</a><br>
+</p>
+
+<p>↓ 投票カテゴリ ↓</p>
+
 {% if latest_question_list %}
 <ul>
     {% for question in latest_question_list %}
