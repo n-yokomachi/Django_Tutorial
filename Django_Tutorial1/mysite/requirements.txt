@@ -1,4 +1,4 @@
-Django==3.0.3
+Django==3.0.7
 pylint==2.3.1
 pylint-django==2.0.13
 pylint-plugin-utils==0.6
